@@ -1,3 +1,4 @@
+require("dotenv").config();
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -5,8 +6,6 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 //var cors = require("cors");
 var mongoose = require("mongoose");
-
-require("dotenv").config();
 
 mongoose
   .connect(process.env.MONGODB_URI)
