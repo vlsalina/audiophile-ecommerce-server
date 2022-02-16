@@ -3,7 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-var cors = require("cors");
+//var cors = require("cors");
 var mongoose = require("mongoose");
 
 require("dotenv").config();
@@ -23,7 +23,7 @@ var productRouter = require("./routes/productRouter");
 
 var app = express();
 
-app.use(cors());
+//app.use(cors());
 
 const port = process.env.PORT || 3434;
 
