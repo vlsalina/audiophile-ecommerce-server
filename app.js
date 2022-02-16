@@ -22,6 +22,7 @@ var productRouter = require("./routes/productRouter");
 
 var app = express();
 
+// comment
 //app.use(cors());
 
 const port = process.env.PORT || 3434;
